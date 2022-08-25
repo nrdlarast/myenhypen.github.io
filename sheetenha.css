@@ -1,0 +1,147 @@
+* {
+    text-decoration: none; /*biar ga ada efek underline di link*/
+    /*atur ke 0 semua biar mepet atas bawah sama page nya*/
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: bold;
+}
+
+.header{
+    padding: 27px 0;
+    margin: auto;
+    position: relative;
+}
+.header-conta{
+    max-width: 1590px;
+    height: 48px;
+    margin: auto;
+}
+
+.header-logo{
+    float: left;
+    padding-bottom: 15px;
+    /*background-color: yellow;*/
+    padding-left: 30px;
+    position: relative;
+}
+
+.header-list li{
+    padding-top: 10px;
+    float: left;
+    font-size: 20px;
+}
+
+.header-list{
+    float: right;
+}
+
+ul{
+    list-style-type: none;
+}
+
+nav{
+    width: 100%;
+    margin: auto;
+    /*position sticky, top 0, background biar headernya follow pass di scroll*/
+    position: sticky;
+    top: 0; /*nempel ke atas*/
+    background: #FFFFFF;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    /*overflow hidden = klo misal ke potong page, tulisan kepotong
+    juga alias ketutupan, harus di scroll bawah atau kanan*/
+    overflow: hidden; 
+}
+
+/*overflow ada visible|hidden, scroll|auto, initial {menurutku initial sama visible hasilnya sama}*/
+
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 55px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(202, 73, 73);
+}
+
+.resize_fit_center {
+    max-width:100%;
+    max-height:100%;
+    vertical-align: middle;
+}
+
+.footer {
+    color: black;
+    /*height: 120px;*/
+    padding: 35px 0;
+  }
+
+.container{
+    max-width: 1590px;
+    margin: auto;
+    font-size: 15px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 65px;
+    
+}
+
+.footer-col h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    position: relative;
+    
+}
+
+.footer-col h3::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: white;
+    height: 2px;
+    box-sizing: border-box;
+    width: 100px;
+}
+
+.footer ul li a{
+    color: black;
+    font-weight: 450;
+    text-transform: capitalize;
+    display: block;
+    transition: all 0.3s ease; /*lama efek transisi*/
+}
+.footer li{
+    list-style-type: none;
+    padding-bottom: 6px;
+}
+.footer ul li a:hover{
+    color: rgb(202, 73, 73);
+    text-decoration: none;
+    padding-left: 8px /*panjang padding left utk transisi*/
+}
